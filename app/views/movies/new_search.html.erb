@@ -1,0 +1,11 @@
+
+<div class="page-header">
+  <h1>Recherche ton film</h1>
+</div>
+
+<%= form_tag home_path do %>
+<div class='form-inline'>
+<%= search_field_tag 'search', nil, class: 'form-control mr-sm-4', placeholder: 'Mon film..'  %>
+<%= submit_tag 'Rechercher', class: "btn btn-info my-2 my-sm-0"  %>
+</div>
+<% end %>
